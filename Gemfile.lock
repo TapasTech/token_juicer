@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    token_juicer (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jwt (2.2.1)
+    rake (12.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jwt
+  rake (~> 12.0)
+  token_juicer!
+
+BUNDLED WITH
+   2.1.2

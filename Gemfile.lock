@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     token_juicer (0.1.0)
+      jwt
 
 GEM
   remote: https://rubygems.org/

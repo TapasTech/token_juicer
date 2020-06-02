@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = "token 榨汁机"
   spec.homepage      = "http://www.cbndata.com"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.add_runtime_dependency 'jwt'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

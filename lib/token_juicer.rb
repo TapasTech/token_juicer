@@ -2,7 +2,7 @@ require "token_juicer/version"
 require 'jwt'
 
 class TokenJuicer
-  def initialize(secret_key, token_prefix, valid_ttl, redis)
+  def initialize(secret_key: , token_prefix: , valid_ttl: , redis: )
     @valid_ttl = valid_ttl
     @token_prefix = token_prefix
     @secret_ket = secret_key

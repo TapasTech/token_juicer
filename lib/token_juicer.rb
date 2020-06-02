@@ -21,11 +21,11 @@ class TokenJuicer
   end
 
   def cache_token(token)
-    redis.set(token_key(token), true, ex: @valid_ttl)
+    @redis.set(token_key(token), true, ex: @valid_ttl)
   end
 
   def del_token(token)
-    redis.del(token_key(token))
+    @redis.del(token_key(token))
   end
 
   def token_valid?(token)
@@ -34,7 +34,7 @@ class TokenJuicer
   end
 
   def token_exist?(token)
-    redis.exists(token_key(token))
+    @redis.exists(token_key(token))
   end
 
   def token_key(token)
